@@ -1,0 +1,62 @@
+﻿/*style reset */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.2 "Microsoft YaHei",\5fae\8f6f\96c5\9ed1,Helvetica,Arial,Microsoft Yahei,sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: 0;
+}
+ol, ul {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+body {
+    background-color: #fff;
+    *font-size: small;
+    *font: x-small;
+}
+select, input, button, textarea {
+    font-size: 99%;
+}
+table {
+    font-size: inherit;
+    font: 100%;
+}
+a, area {
+    outline: 0;
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+.input::-ms-clear { 
+    display: none; 
+}
+img{
+    border: 0;
+    vertical-align: middle;
+    display: block;
+}
+.clearfix:after{content: "";display: block;height: 0;visibility: hidden;clear: both;}
+.clearfix{zoom:1;}
+.clear{
+    clear: both;
+}

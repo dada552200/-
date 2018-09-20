@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>《神无月》手游官网</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/backbone.concat.js"></script>
+    <script src="js/jquery.jplayer.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.mcustomscrollbar.concat.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bar.min.css">
+    <link rel="stylesheet" href="css/video.min.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/public2.css">
+    <link rel="stylesheet" href="css/home-update.css">
+    <script src="js/idangerous.swiper.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+</head>
+<body>
+    <div id="defaultView" class="container">
+        <!-- navigation  -->
+        <div class="nav-wrap">
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="center">
+                            <a href="#" class="logo"></a>
+                            <i class="border"></i>
+                            <ul class="clearfix links">
+                                <li><a href="#">官网首页<i></i></a><em></em></li>
+                                <li><a href="#" target="_blank">情报放送<i></i></a><em></em></li>
+                                <li><a href="#" target="_blank">游戏特色<i></i></a><em></em></li>
+                                <li>
+                                    <a href="#" target="_blank">影音中心<i></i></a>
+                                    <em></em>
+                                    <ul class="clearfix hover hover1">
+                                        <li><a href="#" target="_blank"><i class="i1"></i><span>视频</span></a></li>
+                                        <li><a href="#" target="_blank"><i class="i2"></i><span>图片</span></a></li>
+                                        <li><a href="#" target="_blank"><i class="i3"></i><span>音乐</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_blank">军团百科<i></i></a><em></em></li>
+                                <li>
+                                    <a href="javascript:void(0)">守护军团<i></i></a>
+                                    <div class="clearfix hover hover2">
+                                        <div class="hover2-wrap">
+                                            <a calss="tap" href="#" target="_blank" title="神无月TapTap"></a>
+                                            <a class="tb" href="#" target="_blank" title="神无月官方贴吧"></a>
+                                            <a class="wb" href="#" target="_blank" title="神无月官方微博"></a>
+                                            <span class="tel">95105222-8194</span>
+                                            <span class="qq">370754323</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="fixednav" style="display:none;">
+            <div class="inner">
+                <a href="#" class="logo" title="《神无月》官网首页"></a>
+                <ul class="clearfix links">
+                    <li>
+                        <a href="#">官网首页<i></i></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">情报放送<i></i></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">游戏特色<i></i></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">影音中心<i></i></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">军团百科<i></i></a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">守护军团<i></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hovertab show">
+                <!-- 影音中心下拉 -->
+                <div class="hoveritem" style="display:block;">
+                    <div class="inner">
+                        <ul class="clearfix itemlinks">
+                            <li><a href="#"><i class="i1"></i><span>视频</span></a></li>
+                            <li><a href="#"><i class="i2"></i><span>图片</span></a></li>
+                            <li><a href="#"><i class="i3"></i><span>原声</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 守护军团下拉 -->
+                <div class="hoveritem">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bgPlayer"></div>
+        <!-- top -->
+        <div class="wrap wrap1">   
+            <div class="inner">
+            </div>
+        </div>
+        <!-- news and slide -->
+        <div class="wrap wrap2">
+            <div class="gift-banner">
+                <div class="clearfix inner top">
+                    <div class="nav">
+                        <div class="nav-bar">
+                                <div class="inner">
+                                    <ul class="clearfix tabs">
+                                        <li class="current">
+                                            <span class="sp1"></span>
+                                            <h3>情报放送</h3>
+                                            <i></i>
+                                        </li>
+                                        <li>
+                                            <span class="sp2"></span>
+                                            <h3>游戏日历</h3>
+                                            <i></i>
+                                        </li>
+                                        <li>
+                                            <span class="sp3"></span>
+                                            <h3>同人岛</h3>
+                                            <i></i>
+                                        </li>
+                                        <li>
+                                            <span class="sp4"></span>
+                                            <h3>客服中心</h3>
+                                            <i></i>
+                                        </li>
+                                    </ul>
+                                    <!-- ------------------------------------ -->
+                                    <div class="load-wrap">
+                                        <a class="d1" href="#" target="_blank"></a>
+                                        <a class="d2" href="#" target="_blank"></a>
+                                        <a class="d3" href="#" target="_blank">
+                                            <i></i>
+                                        </a>
+                                        <div class="code">
+                                            
+                                        </div>
+                                        <div class="moni"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="filter close">
+                        <ul class="nav-content">
+                            <!-- 游戏日历 -->
+                            <li class="li1">
+                                <ul class="clearfix">
+                                    <li class="current">
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>天梯赛</h1>
+                                            <h4>终极挑战·紧张刺激的实时公平竞技</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p><span class="day">周一</span>至<span class="day">周日</span></p>
+                                                <p class="time">12:00-14:00<span>|</span>18:00-20:00<span>|</span>21:00-23:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>天梯赛</h2>
+                                            <h4>紧张刺激的实时公平竞技</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times2.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>守护试炼</h1>
+                                            <h4>公会挑战·50人同时挑战的守护圣兽（需加入公会）</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p><span class="day">周一</span>至<span class="day">周日</span></p>
+                                                <p class="time">12:00-14:00<span>|</span>18:00-20:00<span>|</span>20:00-22:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>守护试炼</h2>
+                                            <h4>50人同时挑战的守护圣兽</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times3.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>金币宝库</h1>
+                                            <h4>迎战艾思·获得海量金币奖励（队伍等级10级开放）</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p>
+                                                    <span class="day">周一</span>
+                                                    <span class="day">周三</span>
+                                                    <span class="day">周四</span>
+                                                    <span class="day">周五</span>
+                                                    <span class="day">周六</span>
+                                                    <span class="day">周日</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>金币宝库</h2>
+                                            <h4>获得海量金币奖励</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times4.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>经验材料</h1>
+                                            <h4>各色经验药水·角色要升级？就一定要来玩哟~（队伍等级10级开放）</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p>
+                                                    <span class="day">周一</span>
+                                                    <span class="day">周二</span>
+                                                    <span class="day">周四</span>
+                                                    <span class="day">周五</span>
+                                                    <span class="day">周日</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>经验材料</h2>
+                                            <h4>角色要升级？就一定要来玩哟~</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times5.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>装备材料</h1>
+                                            <h4>导师的试炼·各职业装备材料等你来拿！（队伍等级10级开放）</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p>
+                                                    <span class="day">周二</span>
+                                                    <span class="day">周三</span>
+                                                    <span class="day">周五</span>
+                                                    <span class="day">周六</span>
+                                                    <span class="day">周日</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>装备材料</h2>
+                                            <h4>各职业装备材料等你来拿</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times6.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>挑战探索</h1>
+                                            <h4>通关挑战副本后开启，可获得材料与角色灵魂石奖励！</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p><span class="day">全天</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>挑战探索</h2>
+                                            <h4>通关挑战副本后开启</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="border"></i>
+                                        <div class="img-wrap">
+                                            <img src="images/game-times7.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <h1>多人历练</h1>
+                                            <h4>飓风的咆哮·三人组队挑战BOSS！</h4>
+                                            <h4>希留利亚的复仇·三人的高难度挑战！走错一步，可能就被一招秒杀！（队伍等级30级开启）</h4>
+                                            <div class="detail">
+                                                <span class="sp-title"><i></i>开启时间</span>
+                                                <p><span class="day">全天</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="title">
+                                            <h2>多人历练</h2>
+                                            <h4>三人的高难度挑战！</h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li2">
+                                <div class="inner">
+                                    <ul class="clearfix tab">
+                                        <li class="active">热门推荐</li>
+                                        <li class="split">|</li>
+                                        <li>
+                                            <a href="#" target="_blank">同人绘</a>
+                                        </li>
+                                        <li class="split">|</li>
+                                        <li>
+                                            <a href="#" target="_blank">COS集</a>
+                                        </li>
+                                        <li class="split">|</li>
+                                        <li>
+                                            <a href="#" target="_blank">同人小说</a>
+                                        </li>
+                                        <li class="split">|</li>
+                                        <li>
+                                            <a href="#" target="_blank">手作大触</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="clearfix list">
+                                        <li>
+                                            <a class="link" target="_blank" href="#" data-url="#">
+                                                <div class="img-wrap">
+                                                    <img src="images/tongren1.jpg" alt="">
+                                                </div>
+                                                <h4>贺图-春日圣姬</h4>
+                                            </a>
+                                            <p class="nickname">
+                                                <i></i>
+                                                <span>『神无月同人娘』</span>
+                                            </p>
+                                            <div class="pride">
+                                                <i></i>
+                                                <span>666</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="link" target="_blank" href="#" data-url="#">
+                                                <div class="img-wrap">
+                                                    <img src="images/tongren2.jpg" alt="">
+                                                </div>
+                                                <h4>半次元卡面征集比赛投稿搬运-洛林</h4>
+                                            </a>
+                                            <p class="nickname">
+                                                <i></i>
+                                                <span>『神无月同人娘』</span>
+                                            </p>
+                                            <div class="pride">
+                                                <i></i>
+                                                <span>666</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="link" target="_blank" href="javascript:void(0)" data-url="#">
+                                                <div class="img-wrap">
+                                                    <img src="images/tongren3.jpg" alt="">
+                                                </div>
+                                                <h4>初临神无月的生日趴</h4>
+                                            </a>
+                                            <p class="nickname">
+                                                <i></i>
+                                                <span>『神无月同人娘』</span>
+                                            </p>
+                                            <div class="pride">
+                                                <i></i>
+                                                <span>666</span>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <a class="link" target="_blank" href="#" data-url="#">
+                                                <div class="img-wrap">
+                                                    <img src="images/tongren4.jpg" alt="">
+                                                </div>
+                                                <h4>贺图-休缇奇</h4>
+                                            </a>
+                                            <p class="nickname">
+                                                <i></i>
+                                                <span>『神无月同人娘』</span>
+                                            </p>
+                                            <div class="pride">
+                                                <i></i>
+                                                <span>666</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" target="_blank" class="morelink" title="神无月同人站"></a>
+                                </div>
+                            </li>
+                            <li class="li3">
+                                <div class="kefu-wrap">
+                                    <h3 class="h3-1">公众号：<span>swygame</span></h3>
+                                    <h3 class="h3-2">微博名：<a href="http://weibo.com/swygame" target="_blank" title="《神无月》官方微博">神无月手游</a></h3>
+                                    <h3 class="h3-3">贴吧名：<a href="#" target="_blank" title="《神无月》官方贴吧">神无月手游</a></h3>
+                                    <a href="#" target="_blank" class="link link1">
+                                        <i></i>
+                                        查看
+                                    </a>
+                                    <div class="link link2">
+                                        <i></i>
+                                        查看
+                                        <div class="qun">
+                                            <ul>
+                                                <li>神无月官方①群<span>370754323（已满）</span></li>
+                                                <li>神无月官方②群<span>493910351（已满）</span></li>
+                                                <li>神无月官方③群<span>512102881（已满）</span></li>
+                                                <li>神无月官方④群<span>638033313（已满）</span></li>
+                                                <li>神无月官方⑤群<span>626169776（已满）</span></li>
+                                                <li>神无月官方⑥群<span>624193902</span></li>
+                                                <li>神无月官方⑦群<span>414461885</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="link link3">
+                                        95105222-8194
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix inner middle">
+                    <div class="slide">
+                        <div class="swiper-container topslide">
+                        
+                            <div class="swiper-wrapper">
+                               <img src="images/home-pic1.jpg" alt="" height="393px">
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                        <div class="nav">
+                            <span class="current"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <h2 class="title">
+                            <span></span>
+                            <a href="news/index.html" target="_blank">更多<i>+</i></a>
+                        </h2>
+                        <ul class="clearfix type">
+                            <li class="active"><i></i>最新</li>
+                            <li class="t2"><i></i>新闻</li>
+                            <li class="t3"><i></i>公告</li>
+                            <li class="t4"><i></i>活动</li>
+                            <li class="t5"><i></i>版本</li>
+                            <li class="t6">攻略</li>
+                        </ul>
+                        <div class="filter">
+                            <ul class="item-wrap clearfix">
+                                <li class="item item1">
+                                    <ul>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                        <li><a href="">《神月网》道具信息公示</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item item2">
+                                    <ul>
+                                        <li><a href="">官方漫画——阿特洛波斯篇第二话</a></li>
+                                        <li><a href="">官方漫画——阿特洛波斯篇第二话</a></li>
+                                        <li><a href="">官方漫画——阿特洛波斯篇第二话</a></li>
+                                        <li><a href="">官方漫画——阿特洛波斯篇第二话</a></li>
+                                        <li><a href="">官方漫画——阿特洛波斯篇第二话</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item item3">
+                                    <ul>
+                                        <li><a href="">《神无月》7月4日部分区组数据互通公告</a></li>
+                                        <li><a href="">《神无月》7月4日部分区组数据互通公告</a></li>
+                                        <li><a href="">《神无月》7月4日部分区组数据互通公告</a></li>
+                                        <li><a href="">《神无月》7月4日部分区组数据互通公告</a></li>
+                                        <li><a href="">《神无月》7月4日部分区组数据互通公告</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item item4">
+                                    <ul>
+                                        <li><a href="">《神无月》7.14-7.22清凉夏日季</a></li>
+                                        <li><a href="">《神无月》7.14-7.22清凉夏日季</a></li>
+                                        <li><a href="">《神无月》7.14-7.22清凉夏日季</a></li>
+                                        <li><a href="">《神无月》7.14-7.22清凉夏日季</a></li>
+                                        <li><a href="">《神无月》7.14-7.22清凉夏日季</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item item5">
+                                    <ul>
+                                        <li><a href="">6月14日全区更新公告</a></li>
+                                        <li><a href="">6月14日全区更新公告</a></li>
+                                        <li><a href="">6月14日全区更新公告</a></li>
+                                        <li><a href="">6月14日全区更新公告</a></li>
+                                        <li><a href="">6月14日全区更新公告</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item item6">
+                                    <ul>
+                                        <li><a href="">命运の抉择！《神无月》幻卡系统攻略详解</a></li>
+                                        <li><a href="">命运の抉择！《神无月》幻卡系统攻略详解</a></li>
+                                        <li><a href="">命运の抉择！《神无月》幻卡系统攻略详解</a></li>
+                                        <li><a href="">命运の抉择！《神无月》幻卡系统攻略详解</a></li>
+                                        <li><a href="">命运の抉择！《神无月》幻卡系统攻略详解</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix inner bottom">
+                    <ul class="clearfix tablist">
+                        <li class="default">
+                            <div class="item">
+                                <em class="em1"></em>
+                                <h4>萌新必备</h4>
+                            </div>
+                            <div class="hover">
+                                <div class="clearfix hover-wrap">
+                                    <div class="left">
+                                        <a href="gonglue/index.html" target="_blank" class="more"></a>
+                                        <h2>萌新<br/>必备</h2>
+                                        <a href="gonglue/detail.html?Id=282323" target="_blank" class="top">
+                                            <img src="images/gonglue1.png" alt="">
+                                            <span>不可描述の好感度系统</span>
+                                        </a>
+                                    </div>
+                                    <ul class="right">
+                                        <li><a href="#">《神无月》给萌新的小建议</a></li>
+                                        <li><a href="#">《神无月》给萌新的小建议</a></li>
+                                        <li><a href="#">《神无月》给萌新的小建议</a></li>
+                                        <li><a href="#">《神无月》给萌新的小建议</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li class="default">
+                            <div class="item">
+                                <em class="em2"></em>
+                                <h4>卡牌解析</h4>
+                            </div>
+                            <div class="hover">
+                                <div class="clearfix hover-wrap">
+                                    <div class="left">
+                                        <a href="#" target="_blank" class="more"></a>
+                                        <h2>卡牌<br/>解析</h2>
+                                        <a href="g#" target="_blank" class="top">
+                                            <img src="images/gonglue2.png" alt="">
+                                            <span>洛林·集颜值与实力一体</span>
+                                        </a>
+                                    </div>
+                                    <ul class="right">
+                                        <li><a href="#">《神无月》晨云乡武圣之徒 十六夜</a></li>
+                                        <li><a href="#">《神无月》晨云乡武圣之徒 十六夜</a></li>
+                                        <li><a href="#">《神无月》晨云乡武圣之徒 十六夜</a></li>
+                                        <li><a href="#">《神无月》给萌新的小建议</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li class="default">
+                            <div class="item">
+                                <em class="em3"></em>
+                                <h4>竞技王者</h4>
+                            </div>
+                            <div class="hover">
+                                <div class="clearfix hover-wrap">
+                                    <div class="left">
+                                       <a href="gonglue/index.html" target="_blank" class="more"></a>
+                                        <h2>竞技<br/>王者</h2>
+                                        <a href="gonglue/detail.html?Id=282299" target="_blank" class="top">
+                                            <img src="images/gonglue3.png" alt="">
+                                            <span>天梯赛 · 冰冻高速单秒队</span>
+                                        </a>
+                                    </div>
+                                    <ul class="right">
+                                        
+                                        <li><a href="#">《神无月》竞技场周常攻略 番外篇...</a></li>
+                                        <li><a href="#">《神无月》竞技场周常攻略 番外篇...</a></li>
+                                        <li><a href="#">《神无月》竞技场周常攻略 番外篇...</a></li>
+                                        <li><a href="#">《神无月》竞技场周常攻略 番外篇...</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <i></i>
+                        </li>
+                        <li class="default">
+                            <div class="item">
+                                <em class="em4"></em>
+                                <h4>战术策略</h4>
+                            </div>
+                            <div class="hover">
+                                <div class="clearfix hover-wrap">
+                                    <div class="left">
+                                        <a href="gonglue/index.html" target="_blank" class="more"></a>
+                                        <h2>战术<br/>策略</h2>
+                                        <a href="gonglue/detail.html?Id=282326" target="_blank" class="top">
+                                            <img src="images/gonglue4.png" alt="">
+                                            <span>希留利亚的复仇攻略</span>
+                                        </a>
+                                    </div>
+                                    <ul class="right">
+                                        
+                                        <li><a href="#">《神无月》守护试炼副本详解</a></li>
+                                        <li><a href="#">《神无月》守护试炼副本详解</a></li>
+                                        <li><a href="#">《神无月》守护试炼副本详解</a></li>
+                                        <li><a href="#">《神无月》守护试炼副本详解</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+        <!-- media center and friend links -->
+        <div class="wrap wrap4">
+            <div class="inner">
+                <ul class="clearfix tab">
+                    <li class="tab1 active">
+                        <span></span>
+                        <a href="media/index.html" target="_blank" title="视频中心">+</a>
+                    </li>
+                    <li class="tab2">
+                        <span></span>
+                        <a href="media/lihui.html" target="_blank" title="图片壁纸">+</a>
+                    </li>
+                    <li class="tab3">
+                        <span></span>
+                        <a href="media/music.html" target="_blank" title="游戏原声">+</a>
+                    </li>
+                </ul>
+                <div class="filter">
+                    <ul class="tab-content">
+                        <li class="video">
+                            <ul class="clearfix">
+                                <li class="li1" data-url="#">
+                                    <i></i>
+                                    <span class="shade"></span>
+                                    <span class="sp1"></span>
+                                    <span class="sp2"></span>
+                                    <span class="sp3"></span>
+                                    <div class="img-wrap">
+                                        <img src="images/video-img-20180403.jpg" alt="">
+                                    </div>
+                                    <p><em></em>
+                                    春樱漫舞，又逢君—《神无月》樱花祭拂风来袭！</p>
+                                </li>
+                                <li class="li2" data-url="#">
+                                    <span class="shade"></span>
+                                    <span class="sp1"></span>
+                                    <span class="sp2"></span>
+                                    <span class="sp3"></span>
+                                    <div class="img-wrap">
+                                    <img src="images/2.jpg" alt="">
+                                    </div>
+                                    <p><em></em>
+                                    巨型动漫人物降临日本东京！超幻想世界入口开启！
+                                    </p>
+                                </li>
+                                <li class="li3" data-url="#">
+                                    <span class="shade"></span>
+                                    <span class="sp1"></span>
+                                    <span class="sp2"></span>
+                                    <span class="sp3"></span>
+                                    <div class="img-wrap">
+                                    <img src="images/3.jpg" alt="">
+                                    </div>
+                                    <p><em></em>
+                                    《神无月》CV担当全明星阵容</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pic">
+                            <ul class="clearfix">
+                                <li class="li1">
+                                    <i></i>
+                                    <span class="shade">
+                                    </span>
+                                    <a class="view" target="_blank" href="#" title="立绘"></a>
+                                    <div class="img-wrap">
+                                    <a href="#" target="_blank" title="高清壁纸">
+                                    <img src="images/home-pic1.jpg" alt="">
+                                    </a>
+                                    </div>
+                                    <p><em></em>登录界面海报</p>
+                                </li>
+                                <li class="li2">
+                                    <span class="shade"></span>
+                                    <a class="view" target="_blank" href="#" title="立绘"></a>
+                                    <div class="img-wrap">
+                                    <a href="#" target="_blank" title="立绘">
+                                    <img src="images/home-pic2.jpg" alt="">
+                                    </a>
+                                    </div>
+                                    <p><em></em>渎神者·凛音</p>
+                                </li>
+                                <li class="li3">
+                                    <span class="shade">
+                                    </span>
+                                    <a class="view" target="_blank" href="#" title="立绘"></a>
+                                    <div class="img-wrap">
+                                    <img src="images/home-pic3.jpg" alt="">
+                                    </div>
+                                    <p><em></em>机械学徒·星洛</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="musics">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="shade">
+                                    </div>
+                                    <div id="player1"></div>
+                                    <span class="cd"></span>
+                                    <div class="img-wrap">
+                                   <img src="images/home-song1.png" alt="">
+                                   </div>
+                                   <div class="detail">
+                                       <h2>神無月コンパッション</h2>
+                                       <div class="info">
+                                            演唱：<span>花泽香菜</span> 
+                                            <span class="split">丨</span> 
+                                            词曲：<span>KOUTAPAI</span>
+                                       </div>
+                                       <div class="status">
+                                           <span data-id="#player1"></span>
+                                           <b>03:28</b>
+                                       </div>
+                                   </div> 
+                                </li>
+                                <li>
+                                    <div class="shade">
+                                    </div>
+                                    <div id="player2"></div>
+                                    <span class="cd"></span>
+                                    <div class="img-wrap">
+                                   <img src="images/home-song1.jpg" alt="">
+                                   </div>
+                                   <div class="detail">
+                                       <h2>行こう！神々が去る世界を守る！(Game version) </h2>
+                                       <div class="info">
+                                            作者：<span>崎元仁</span> 
+                                            <span class="split">丨</span> 
+                                            场景：<span>登录界面</span>
+                                       </div>
+                                       <div class="status">
+                                           <span data-id="#player2"></span>
+                                           <b>01:21</b>
+                                       </div>
+                                   </div> 
+                                </li>
+                                <li>
+                                    <div class="shade">
+                                    </div>
+                                    <div id="player3"></div>
+                                    <span class="cd"></span>
+                                    <div class="img-wrap">
+                                   <img src="images/home-song2.jpg" alt="">
+                                   </div>
+                                   <div class="detail">
+                                       <h2>グランティナのつぶやき</h2>
+                                       <div class="info">
+                                            作者：<span>崎元仁</span> 
+                                            <span class="split">丨</span> 
+                                            场景：<span>主界面小屋</span>
+                                       </div>
+                                       <div class="status">
+                                           <span data-id="#player3"></span>
+                                           <b>02:00</b>
+                                       </div>
+                                   </div>  
+                                </li>
+                                <li class="last">
+                                    <div class="shade">
+                                    </div>
+                                    <div id="player4"></div>
+                                    <span class="cd"></span>
+                                    <div class="img-wrap">
+                                   <img src="images/home-song3.jpg" alt="">
+                                   </div>
+                                   <div class="detail">
+                                       <h2>宿命</h2>
+                                       <div class="info">
+                                            作者：<span>崎元仁</span> 
+                                            <span class="split">丨</span> 
+                                            场景：<span>召唤</span>
+                                       </div>
+                                       <div class="status">
+                                           <span data-id="#player4"></span>
+                                           <b>00:51</b>
+                                       </div>
+                                   </div>  
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="outlook">
+                    <div class="look">
+                        米德伊尔大陆在数百年前曾是一个战乱不休的地方，<br/>
+                        国与国之间为了土地、利益、资源互相征战，使得底层的人民们流离失所。
+                    </div>
+                    <div class="look">
+                        渐渐地，这些人聚集起来，成立了 “光耀会”。<br/>
+                        相互帮助并虔诚祈祷，期望有一天能有神明来拯救他们于水火之中。
+                    </div>
+                    <div class="look">
+                        也许是信念的力量，神明确确实实地来到了这个世界，<br/>
+                        它在整片大陆的中央投下了一颗种子，并指引信徒们：<br/>
+                        待种子成长为一个巨大的树后，登上这棵树去生活，从此便能远离充满战火的地面。<br/>
+                        神明还创造了一些“天使”守护着人们，自己则离开了。
+                    </div>
+                    <div class="look">
+                        。。。
+                    </div>
+                    <a href="#" target="_blank">查看全部</a>
+                </div>
+                <div class="share">
+                </div>
+                <div class="friend-links">
+                    <a href="#" class="link1" target="_blank" ></a>
+                    <a href="#" class="link2" target="_blank" ></a>
+                    <a href="#" class="link3" target="_blank" ></a>
+                    <a href="#" class="link4" target="_blank" ></a>
+                    <a href="#" class="link5" target="_blank" ></a>
+                    <a href="#" class="link6" target="_blank" ></a>
+                    <div class="more">更多合作媒体<i></i>
+                        <div class="select">
+                            <a href="#" target="_blank" >17173</a>
+                            <a href="#" target="_blank" >腾讯游戏</a>
+                            <a href="#" target="_blank" >新浪</a>
+                            <a href="#" target="_blank" >任玩堂</a>
+                            <a href="#" target="_blank" >叶子猪</a>
+                            <a href="#" target="_blank" >游戏多</a>
+                            <a href="#" target="_blank" >52pk</a>
+                            <a href="#" target="_blank" >搞趣网</a>
+                            <a href="#" target="_blank" >游戏狗</a>
+                            <a href="#" target="_blank" >游久网</a>
+                            <a href="#" target="_blank" >超好玩</a>
+                            <a href="#" target="_blank" >天极网</a>
+                            <a href="#" target="_blank" >4399</a>
+                            <a href="#" target="_blank" >电玩巴士</a>
+                            <a href="#" target="_blank">手机游戏网</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey">
+                    <a href="#" class="link1" target="_blank">家长监护信息<i></i></a>
+                    <a href="#" class="link2" target="_blank">防沉迷信息补填<i></i></a>
+                    <a href="#" class="link3" target="_blank">用户协议<i></i></a>
+                    <a href="#" class="link4" target="_blank">实名信息补填<i></i></a>
+                    <a href="#" class="link5" target="_blank">隐私政策<i></i></a>
+                </div>
+            </div>
+            <span class="ceil ceil5"></span>
+            <span class="ceil ceil6"></span>
+        </div>
+        <!-- pop part -->
+        <div id="join1Pop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="close"></span>
+                <input id="telTxt" type="text" placeholder="请留下手机号，作为军团内部的联络方式哦~" maxlength="11">
+                <input id="verfyTxt" type="text" placeholder="请输入验证码" maxlength="4">
+                <img id="verfyImg" src="images/authorcode.aspx" alt="">
+                <span class="btn"></span>
+            </div>
+        </div>
+        <div id="join2Pop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="close"></span>
+            </div>
+        </div>
+        <div id="videoPop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="close v-close"></span>
+                <div class="embed-wrap">
+                    <video id="innerVideo" class="video-js vjs-default-skin"
+                      controls preload="auto" width="780">
+                      <source src="" type='video/mp4' />
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="moniPop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="new-close"></span>
+                <div class="links">
+                    <div class="links-wrap">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" target="_blank"><i class="i1"></i></a>
+                                <h3>网易mumu模拟器下载</h3>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="i2"></i></a>
+                                <h3>天天模拟器下载</h3>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="i3"></i></a>
+                                <h3>全民助手模拟器下载</h3>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="i4"></i></a>
+                                <h3>腾讯手游助手下载</h3>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="i5"></i></a>
+                                <h3>蓝叠模拟器下载</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tips-wrap">
+                    <h3>※ 下载提醒</h3>
+                    <p>1、点击相应图标下载安装即可开始游戏。</p>
+                    <p>2、PC版文件由各家模拟器官方提供技术支持，在使用过程中如遇到与适配相关的问题，可联系相对应的模拟器官方解决。</p>
+                </div>
+            </div>
+        </div>
+        <div id="giftPop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="new-close"></span>
+            </div>
+        </div>
+        <div id="picPop" class="pop">
+            <div class="mask"></div>
+            <div class="content">
+                <span class="new-close"></span>
+                <img src="" alt="">
+            </div>
+        </div>
+        <!-- bottom fixed bar -->
+        <div id="homefixedbar" style="display:none;">
+            <a href="http://app.clientdown.sdo.com/191/c1898/SWY_0.81000_201708281823_GG1113.apk" target="_blank" title="下载神无月">
+                <i></i>
+            </a>
+            <p style="line-height: 58px;">脱单公测福利活动</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <script type="text/javascript">  var CopyRightcss = 'http://static.sdg-china.com/sdg/pic/SDGCOPYRIGHT/each/white.css';</script>
+        <!-- <script type="text/javascript" src="js/mooncopyright.js" charset="gb2312"></script> -->
+    </div>
+</body>
+</html>
+
+
+<!-- 顶部轮播模板 -->
+<script id="topslideTemp" type="text/template">
+    <%if(list && list.length>0){%>
+        <%for(var i=0;i<list.length;i++){%>
+            <a class="swiper-slide swiper-no-swiping" href="<%=list[i].LinkURL%>" target="_blank" title="<%=list[i].TitlePic%>">
+                <img src="<%=list[i].BG%>" alt="">
+            </a>
+        <%}%>
+    <%}%>
+</script>
+<!-- 守护者军团底部导航 -->
+<script id="navTemp" type="text/template">
+    <%if(list && list.length>0){%>
+        <%for(var i=0;i<list.length;i++){%>
+            <li>
+                <div class="roleWrap">
+                    <div class="role-wrap">
+                        <img src="<%=list[i].SmallFace%>" alt="">
+                    </div>
+                </div>
+                <i></i>
+                <h2><%=list[i].RoleName%></h2>
+            </li>
+        <%}%>
+    <%}%>
+</script>
+<!-- 守护者军团个体信息 -->
+<script id="roleTemp" type="text/template">
+    <%if(list && list.length>0){%>
+        <%for(var i=0;i<list.length;i++){%>
+            <li class="item">
+                <div class="detail">
+                    <h1 class="name clearfix">
+                        <span><%=list[i].RoleName%></span>
+                        <div class="relate">
+                            <%if(list[i].Job=="战士"){%>
+                                <i class="t1">
+                                    战士
+                                </i>
+                            <%}else if(list[i].Job=="刺客"){%>
+                                <i class="t2">
+                                    刺客
+                                </i>
+                            <%}else if(list[i].Job=="射手"){%>
+                                <i class="t3">
+                                    射手
+                                </i>
+                            <%}else if(list[i].Job=="法师"){%>
+                                <i class="t4">
+                                    法师
+                                </i>
+                            <%}else if(list[i].Job=="牧师"){%>
+                                <i class="t5">
+                                    牧师
+                                </i>
+                            <%}%>
+                            <b><%=list[i].CardGrade%></b>
+                        </div>
+                    </h1>
+                    <p>
+                        <%=list[i].Description%>
+                    </p>
+                    <a  href="book/detail.html?no=<%=list[i].CardID%>" target="_blank">查看详情</a>
+                    <span class="change"></span>
+                </div>
+                <div class="roleImg" data-id="<%=i%>">
+                    <img src="#" alt="" style="left:-<%=list[i].CartoonDot0x%>px;top:-<%=list[i].CartoonDot0y%>px">
+                </div>
+                <div class="cardImg">
+                    <img src="<%=list[i].vCartoon1[0]%>" alt="">
+                </div>
+                <%if(list[i].Prop_Atk!=0){%>
+                    <div class="spider-box">
+                        <img src="#" />
+                    </div>
+                <%}else{%>
+                    <div class="spider-box magic">
+                        <img src="#" />
+                    </div>
+                <%}%>
+            </li>
+        <%}%>
+    <%}%>
+</script>
+<script src="js/public2.js"></script>
+<script src="js/home-update.js"></script>
